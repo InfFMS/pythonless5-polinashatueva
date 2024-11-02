@@ -3,3 +3,17 @@
 # Сымитруем данные списком длины N со случайными числами в диапазоне от 0 до 1000
 # Удалите из этого списка все значения, которые на 30 % отличаются
 # от среднего значения списка
+from random import randint
+N = int(input())
+A=[randint(0,1000)
+            for i in range(N)]
+print(A)
+
+s =sum(A)/len(A)
+import copy
+C = copy.copy(A)
+print(C)
+for v in range(N):
+    if A[v] <0.7*s or A[v] >1.3*s:
+        C.remove(A[v])
+print(C)

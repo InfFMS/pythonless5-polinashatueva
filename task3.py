@@ -7,3 +7,19 @@
 # [1, 2, 3, 2, 5, 10]
 # Вывод:
 # значение:2 индексы 1 и 3
+from random import randint
+N = int(input())
+A=[randint(0,100)
+            for i in range(N)]
+print(A)
+B =[]
+j = 0
+for i in range(N-1):
+    for b in range(i+1,N):
+        if A[i]==A[b]:
+            B.append(A[i])
+            print("yes",i,b)
+            j += 1
+
+if j == 0:
+    print('no')
